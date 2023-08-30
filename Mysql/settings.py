@@ -14,12 +14,14 @@ SECRET_KEY = 'django-insecure-f6_kkk1c56r9q(vsa!ri@j76i!k$+bhh-5zs5*%5$39k4is5(p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['.onrender.com','127.0.0.1','localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -114,7 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = "staticfiles"
 
 
 

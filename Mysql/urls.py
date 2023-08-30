@@ -26,4 +26,3 @@ urlpatterns = [
     path('update/<int:id>',views.update,name="Update"),
     path('delete/<int:id>',views.delete,name="Delete"),
 ]
-urlpatterns +=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
